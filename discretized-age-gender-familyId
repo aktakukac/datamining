@@ -57,14 +57,3 @@ printcp(fit)
 Prediction <- predict(fit, test, type = "class");
 result <- data.frame(PassengerId = test$PassengerId, Survived = as.numeric(levels(Prediction))[Prediction]);
 write.csv(result, file = "featureselection.csv", row.names = FALSE);
-
-########## Logistic regression ##########
-
-#model = glm(Survived ~ Age:Sex + Pclass:Sex + Title + Embarked + FamSize, family = binomial(logit), data = train)
-model = glm(Survived ~ FamilyID, family = binomial(logit), data = train)
-summary(model)
-
-p <- predict(model, test, type="response")
-result <- data.frame(PassengerId = test$PassengerId, Survived = p);
-
-write.csv(result, file = "H:/Data Mining/kaggle/logistic.csv", row.names = FALSE);
