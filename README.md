@@ -11,6 +11,7 @@
 
 
 ###discretized-age-gender-familyId.r
+  Fills missing age values using a regression tree on initial features, plus family size and honorific title. Adds categorical age combined with sex, and a family id as a combination of surname and family size.
 
 |Algorithm   | Kaggle Score   |
 |---|---|
