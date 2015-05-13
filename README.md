@@ -8,3 +8,14 @@
 | Logistic Regression  | 0.78947  |
 | Random Forests  |  0.78947|
 | Support Vector Machines  |  0.79904 |
+
+
+###discretized-age-gender-familyId.r
+
+|Algorithm   | Kaggle Score   |
+|---|---|
+|  Decision tree | 0.81340  |
+|  Naive Bayes Classifier |  0.72249|
+|  Neural Network model |  0.79426 |
+|  Random forest with conditional inference trees | 0.80383 |
+
